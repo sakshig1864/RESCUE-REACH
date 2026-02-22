@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form action="" method="post">
+        <fieldset>
+          <legend>LOGIN</legend>
+          <!-- Username start -->
+          <label for="username"
+            >User Name <sup style="color: red">*</sup></label
+          >
+          <input
+            type="text"
+            id="username"
+            placeholder="User Name"
+            name="username"
+            required
+            minlength="5"
+            maxlength="10"
+          />
+          <!-- Usename Ends -->
+          <br /><br />
+
+          <label for="username"
+            >Password <sup style="color: red"> *</sup></label
+          >
+          <input
+            type="password"
+            id="pwd"
+            placeholder="Enter Password"
+            name="pwd"
+            required
+            pattern="[a-z, A-Z]{3,5}"
+          />
+          <br /><br />
+
+          <button type="submit">Submit</button>
+          <br />
+          <div>
+            <a href="register.html">Don't have account ? Registere here</a>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

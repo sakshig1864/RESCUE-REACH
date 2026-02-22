@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration form</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="register-form">
+      <form action="" method="get">
+        <fieldset>
+          <legend>Register</legend>
+          <!-- Username start -->
+          <label for="username"
+            >User Name <sup style="color: red">*</sup></label
+          >
+          <input
+            type="text"
+            id="username"
+            placeholder="User Name"
+            name="username"
+            required
+            minlength="5"
+            maxlength="10"
+          />
+          <!-- Usename Ends -->
+          <br /><br />
+          <!-- Password Start -->
+          <label for="pwd">Password <sup style="color: red"> *</sup></label>
+          <input
+            type="password"
+            id="pwd"
+            placeholder="Enter Password"
+            name="pwd"
+            required
+            pattern="[a-z, A-Z]{3,5}"
+          />
+          <!-- Password Ends -->
+          <br /><br />
+          <!-- Mobile Starts -->
+          <label for="code">Mobile Number</label>
+          <select name="c_code" id="code">
+            <option value="+91">+91</option>
+            <option value="+92">+92</option>
+            <option value="+93">+93</option>
+            <option value="+94">+94</option>
+          </select>
+          <input
+            type="tel"
+            placeholder="Enter Relative's Mobile NUmber"
+            name="mob"
+            minlength="10"
+            maxlength="10"
+          />
+          <!-- Mobile Ends -->
+          <br /><br />
+          <!-- Gender Starts -->
+          <label for="">Gender</label>
+          <input type="radio" id="M" name="Gender" value="Male" />
+          <label for="M">Male</label>
+
+          <input type="radio" id="F" name="Gender" value="Female" />
+          <label for="F">Female</label>
+          <!-- Gender Ends -->
+          <br /><br />
+
+          <!-- Date of Birth -->
+          <label for="dob">Date of Birth:</label><br />
+          <input type="date" id="dob" name="dob" required />
+          <br /><br />
+
+          <!-- Blood Group -->
+          <label for="blood">Blood Group:</label><br />
+          <select id="blood" name="blood" required>
+            <option value="">Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select>
+          <br /><br />
+
+          <!-- Primary Condition (Radio Buttons) -->
+          <label>Primary Condition:</label><br />
+
+          <input
+            type="radio"
+            id="alz"
+            name="condition"
+            value="Alzheimer’s"
+            required
+          />
+          <label for="alz">Alzheimer’s</label><br />
+
+          <input type="radio" id="park" name="condition" value="Parkinson’s" />
+          <label for="park">Parkinson’s</label><br />
+
+          <input type="radio" id="both" name="condition" value="Both" />
+          <label for="both">Both</label>
+          <br /><br />
+
+          <!-- Doctor Name -->
+          <label for="doctorName">Doctor Name:</label><br />
+          <input
+            type="text"
+            id="doctorName"
+            name="doctorName"
+            placeholder="Enter Doctor Name"
+            required
+          />
+          <br /><br />
+
+          <!-- Doctor Contact -->
+          <label for="doctorContact">Doctor Contact:</label><br />
+          <input
+            type="tel"
+            id="doctorContact"
+            name="doctorContact"
+            placeholder="Enter Doctor Contact"
+            pattern="[0-9]{10}"
+            required
+          />
+          <br /><br />
+          <button type="submit">GET QR</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

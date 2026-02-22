@@ -1,0 +1,28 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to left, #fafdfb, #98efd5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  background-color: white;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 8px;
+  width: 300px;
+}
+
+button {
+  display: flex;
+  margin: 0 65px;
+  background-color: #2e8b57;
+  color: white;
+  border-radius: 5px;
+}
+register-form {
+  background: linear-gradient(to left, #2e8b57, #98efd5);
+  border: 2px solid black;
+}
